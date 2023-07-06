@@ -35,217 +35,181 @@
     <title>Circle | Home</title>
 
     <style>
-        .navbar,
-.navbar-brand,
-.navbar-nav,
-.form,
-#about,
-.about-list,
-.about-image,
-.about-header,
-#social-proof,
-#social-proof img,
-.rank,
-#rank,
-.Professional,
-#service-list,
-#service-box,
-#service-card,
-#service-card h4,
-#service-card p,
-#service-card .row,
-#reviews,
-.reviews-header,
-#reviews .row,
-#reviews .col-4,
-#contact,
-#contact .row,
-#contact .col-6,
-footer,
-footer .row,
-.copyright,
-footer .row img,
-.nav-link,
-.social,
-#syllabus,
-#syllabus .row {
-  /* border: 2px solid red; */
-}
+        * {
+            box-sizing: border-box;
+        }
 
-* {
-  box-sizing: border-box;
-}
+        html {
+            scroll-behavior: smooth;
+        }
 
-html {
-  scroll-behavior: smooth;
-}
+        body {
+            overflow-x: hidden;
+        }
 
-body {
-  overflow-x: hidden;
-}
+        #body-color {
+            background-color: #f8ede5;
+        }
 
-#body-color {
-  background-color: #f8ede5;
-}
+        body,
+        #rank {
+            background-color: #f8ede5;
+        }
 
-body,
-#rank {
-  background-color: #f8ede5;
-}
+        .collapse form input {
+            border-radius: 50px 0 0px 50px;
+            width: 150%;
+        }
 
-.collapse form input {
-  border-radius: 50px 0 0px 50px;
-  width: 150%;
-}
+        .collapse form button {
+            padding: 10px 20px 10px 20px;
+            border-radius: 0 50px 50px 0;
+        }
 
-.collapse form button {
-  padding: 10px 20px 10px 20px;
-  border-radius: 0 50px 50px 0;
-}
+        #about {
+            background-image: url(../images/hero.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 0 0 80px 80px;
+        }
 
-#about {
-  background-image: url(../images/hero.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 0 0 80px 80px;
-}
+        #about-image img {
+            width: 80%;
+        }
 
-#about-image img {
-  width: 80%;
-}
+        .about-list .about-header {
+            font-size: 4rem;
+        }
 
-.about-list .about-header {
-  font-size: 4rem;
-}
+        .about-list p {
+            font-size: 1rem;
+        }
 
-.about-list p {
-  font-size: 1rem;
-}
+        .about-list .btn,
+        #contact .btn {
+            background-color: #ebc7b5;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 20px 30px 20px 30px;
+            border-radius: 50px;
+        }
 
-.about-list .btn,
-#contact .btn {
-  background-color: #ebc7b5;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 20px 30px 20px 30px;
-  border-radius: 50px;
-}
+        .about-list .btn:hover,
+        #contact .btn:hover {
+            background-color: white;
+            color: black;
+        }
 
-.about-list .btn:hover, #contact .btn:hover {
-  background-color: white;
-  color: black;
-}
+        .navbar-nav {
+            gap: 1rem;
+        }
 
-.navbar-nav {
-  gap: 1rem;
-}
+        .navbar-nav a {
+            color: white;
+        }
 
-.navbar-nav a {
-  color: white;
-}
+        .rank #rank {
+            border-radius: 50px;
+            padding: 3rem;
+            font-size: 10px;
+        }
 
-.rank #rank {
-  border-radius: 50px;
-  padding: 3rem;
-  font-size: 10px;
-}
+        .about .rank {
+            padding: 5rem;
+        }
 
-.about .rank {
-  padding: 5rem;
-}
+        .Professional {
+            background-image: url(../images/hero.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 80px 80px;
+        }
 
-.Professional {
-  background-image: url(../images/hero.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 80px 80px;
-}
+        .Professional {
+            padding: 3rem;
+        }
 
-.Professional {
-  padding: 3rem;
-}
+        #service-list {
+            padding-bottom: 2rem;
+        }
 
-#service-list {
-  padding-bottom: 2rem;
-}
+        #service-box {
+            padding: 0 0rem;
+            gap: 2rem;
+        }
 
-#service-box {
-  padding: 0 0rem;
-  gap: 2rem;
-}
+        #service-card {
+            background-color: #f8ede5;
+            padding: 2rem 2rem 0rem 2rem;
+            border-radius: 50px 50px 0px 0px;
+        }
 
-#service-card {
-  background-color: #f8ede5;
-  padding: 2rem 2rem 0rem 2rem;
-  border-radius: 50px 50px 0px 0px;
-}
+        #service-box #service-card .row .col-6 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: end;
+            padding: 0;
+        }
 
-#service-box #service-card .row .col-6 {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: end;
-  padding: 0;
-}
+        #service-box #service-card .row .col-6 a {
+            text-decoration: none;
+            color: black;
+        }
 
-#service-box #service-card .row .col-6 a {
-  text-decoration: none;
-  color: black;
-}
+        #contact {
+            background-image: url(../images/hero.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 80px 80px;
+        }
 
-#contact {
-  background-image: url(../images/hero.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 80px 80px;
-}
+        #contact input {
+            border-radius: 50px;
+            border: 2px solid white;
+            outline: none;
+            background: none;
+            padding: 20px 30px 20px 30px;
+        }
 
-#contact input {
-  border-radius: 50px;
-  border: 2px solid white;
-  outline: none;
-  background: none;
-  padding: 20px 30px 20px 30px;
-}
+        .social {
+            border-radius: 50px;
+            padding: 0rem;
+            gap: 1rem;
+        }
 
-.social {
-  border-radius: 50px;
-  padding: 0rem;
-  gap: 1rem;
-}
+        .social a i {
+            color: black;
+            border: 2px solid black;
+            border-radius: 50px;
+            padding: 0.5rem;
+        }
 
-.social a i {
-  color: black;
-  border: 2px solid black;
-  border-radius: 50px;
-  padding: 0.5rem;
-}
+        .social a i:hover {
+            background-color: #3c8aac;
+        }
 
-.social a i:hover {
-  background-color: #3c8aac;
-}
+        footer .nav-link {
+            color: black;
+        }
 
-footer .nav-link {
-  color: black;
-}
+        footer .nav-link:hover {
+            color: #3c8aac;
+        }
 
-footer .nav-link:hover {
-  color: #3c8aac;
-}
+        footer .row address:hover {
+            color: #3c8aac;
+        }
 
-footer .row address:hover {
-  color: #3c8aac;
-}
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
 
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-}
-
-.whatsapp-float i {
-  color: #3c8aac;
-  font-size: 70px;
-}
+        .whatsapp-float i {
+            color: #3c8aac;
+            font-size: 70px;
+        }
     </style>
 </head>
 
@@ -280,8 +244,8 @@ footer .row address:hover {
         </div>
 
         <!----------About----------->
-        <div class="row w-100  d-xl-flex justify-content-evenly align-items-center" style="padding: 4rem;">
-            <div class="col-xl-6 col-lg-12 " >
+        <div class="row w-100  d-xl-flex justify-content-evenly align-items-center" style="padding: 4rem;" id="about">
+            <div class="col-xl-6 col-lg-12 ">
                 <div class="about-list text-light">
                     <h1 class="about-header">Your next big</h1>
                     <h1 class="about-header">idea starts here</h1>
@@ -291,7 +255,7 @@ footer .row address:hover {
                     <button class="btn">Start for free</button>
                 </div>
             </div>
-            <div class="col-xl-6 col-lg-12" id="about-image" >
+            <div class="col-xl-6 col-lg-12" id="about-image">
                 <div class="about-image d-flex justify-content-end">
                     <img src="images/png and jpg format/hero_illustr copy.png" alt="" width="100%">
                 </div>
@@ -299,7 +263,7 @@ footer .row address:hover {
         </div>
 
         <!---------- Social Proof---------->
-        <div class="row w-100 p-5" id="social-proof" >
+        <div class="row w-100 p-5" id="social-proof">
             <div class="col-xl-12 d-flex  justify-content-evenly">
                 <img src="./images/png and jpg format/hero_logo-01 copy.png" alt="TransferWise" width="15%">
                 <img src="./images/png and jpg format/hero_logo-02 copy.png" alt="Woocommerce" width="15%">
@@ -310,7 +274,7 @@ footer .row address:hover {
 
         <!-- ----------Rank---------- -->
         <div class="rank w-100  mt-2">
-            <div class="row  gy-5 gy-xl-0 gy-xxl-0 text-center" id="rank" >
+            <div class="row  gy-5 gy-xl-0 gy-xxl-0 text-center" id="rank">
                 <div class="col-xl-4 col-lg-12" id="rank-item">
                     <img src="images/png and jpg format/hero_numb 1.png" alt="" width="50%">
                     <p>Ideal courses to sell physical and digital products from your site on WordPress.com</p>
@@ -333,7 +297,7 @@ footer .row address:hover {
             <div class="col-12 text-center pb-3">
                 <h1>Syllabus of courses</h1>
             </div>
-            <div class="col-xl-6 col-lg-12" >
+            <div class="col-xl-6 col-lg-12">
                 <img src="images/png and jpg format/computer-couch.png" alt="" width="100%">
             </div>
             <div class="col-xl-6 col-lg-12">
@@ -407,7 +371,7 @@ footer .row address:hover {
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-6" id="service-card" >
+            <div class="col-xl-3 col-lg-6" id="service-card">
                 <h4>PROGRAMMING</h4>
                 <p class="fs-5">WordPress: How to start in a developer without any basic knowledge</p>
                 <div class="row">
@@ -419,7 +383,7 @@ footer .row address:hover {
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-6" id="service-card" >
+            <div class="col-xl-3 col-lg-6" id="service-card">
                 <h4>SEO</h4>
                 <p class="fs-5">Creating dynamic sites with CMS WordPress + SEO for WordPress websites</p>
                 <div class="row">
@@ -438,7 +402,7 @@ footer .row address:hover {
     <!----------Reviews---------->
     <div class="container-fluid w-100" id="reviews">
         <h1 class="reviews-header text-center pt-5">Students reviews</h1>
-        <div class="row p-5 text-center d-flex justify-content-center align-items-center" >
+        <div class="row p-5 text-center d-flex justify-content-center align-items-center">
             <div class="col-xl-4 col-lg-6 p-5">
                 <img src="images/png and jpg format/ava-01.png" alt="">
                 <h3>Anna Tyuneva</h3>
@@ -462,7 +426,7 @@ footer .row address:hover {
     <!----------Questions---------->
     <div class="container-fluid" id="contact">
         <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-xl-6 col-lg-12 text-light p-5" >
+            <div class="col-xl-6 col-lg-12 text-light p-5">
                 <h1>Still have questions?</h1>
                 <p>Leave a request and we will contact you to help you choose the best training format.</p>
                 <form class="d-flex my-3" role="search">
@@ -471,14 +435,14 @@ footer .row address:hover {
                 </form>
             </div>
 
-            <div class="col-xl-6 col-lg-12 p-5" >
+            <div class="col-xl-6 col-lg-12 p-5">
                 <img src="images/png and jpg format/questions_illustr.png" alt="" width="100%">
             </div>
         </div>
     </div>
 
     <!----------Footer---------->
-    <footer class="container-fluid p-3" id="footer" >
+    <footer class="container-fluid p-3" id="footer">
         <div class="row d-flex justify-content-center align-items-center py-3">
             <div class="col-xl-4 col-lg-12 p-lg-5">
                 <img src="images/png and jpg format/logo copy.png" alt="" class="img-fluid" width="60%">
